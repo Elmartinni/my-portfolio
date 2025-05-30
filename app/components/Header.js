@@ -1,10 +1,9 @@
-'use client'; // If you plan to add any client-side interactivity later (like active link styling)
+'use client'; 
 
 import Link from 'next/link';
-import { useEffect } from 'react'; // For Bootstrap JS components if needed
-
+import { useEffect } from 'react'; 
 const Header = () => {
-  // Effect to ensure Bootstrap JS is loaded if you use components like dropdowns or collapse
+  
   useEffect(() => {
     if (typeof window !== 'undefined') {
       import('bootstrap/dist/js/bootstrap.bundle.min.js');
