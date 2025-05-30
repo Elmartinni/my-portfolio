@@ -1,0 +1,77 @@
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 260px; /* Sidebar width */
+  z-index: 1045; /* Ensure sidebar is above most content but below critical modals/popups if any */
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar-closed {
+  transform: translateX(-100%);
+}
+
+.sidebar-open {
+  transform: translateX(0);
+}
+
+/* On larger screens (lg and up), if you want the sidebar to be always visible and push content */
+@media (min-width: 992px) { /* Bootstrap lg breakpoint */
+  .sidebar {
+    transform: translateX(0); /* Always visible */
+  }
+  .main-content {
+    margin-left: 260px; /* Same as sidebar width */
+    transition: margin-left 0.3s ease-in-out;
+  }
+  /* Hide the hamburger toggle on large screens as sidebar is always visible */
+  .btn.d-lg-none[aria-label="Toggle navigation"] {
+    display: none !important;
+  }
+   /* Hide the X close button inside the sidebar on large screens */
+  .sidebar .btn.d-lg-none[aria-label="Close sidebar menu"] {
+    display: none !important;
+  }
+}
