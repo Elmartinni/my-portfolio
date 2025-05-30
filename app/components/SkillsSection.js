@@ -43,12 +43,12 @@ const SkillsSection = () => {
 
 
   return (
-    <section id="skills" className="py-5 bg-body-tertiary" style={{ color: 'var(--foreground)' }}> {/* Added bg-body-tertiary and increased padding */}
+    <section id="skills" className="py-3 bg-body-tertiary" style={{ color: 'var(--foreground)' }}> {/* Added bg-body-tertiary and increased padding */}
       <div className="container">
         {/* Section Title and Introduction */}
         <div className="row">
-          <div className="col-12 text-center mb-3"> {/* Increased bottom margin */}
-            <h2 className="display-5 fw-bold mb-4">Skills</h2> {/* Adjusted bottom margin */}
+          <div className="col-12 text-center mb-2"> {/* Increased bottom margin */}
+            <h2 className="display-5 fw-bold mb-1">Skills</h2> {/* Adjusted bottom margin */}
             <p className="fs-5" style={{ color: 'var(--foreground-muted)' }}>
               Here are some of the technologies and tools I work with:
             </p>

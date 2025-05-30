@@ -16,7 +16,7 @@ const ContactSection = () => {
             <div className="mb-4">
               <p className="lead fw-semibold mb-2">Email:</p>
               <p className="fs-5">
-                <a href="mailto:your.email@example.com" style={{ color: 'var(--foreground)' }}>martinsigabadia@gmail.com</a> {/* Replace with your email */}
+                <a href="mailto:martinsigbadia@gmail.com" style={{ color: 'var(--foreground)' }}>martinsigbadia@gmail.com</a> {/* Replace with your email */}
               </p>
             </div>
 
